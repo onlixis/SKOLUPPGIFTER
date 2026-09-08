@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentformulär</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="topbar">
+            <h1>Studentformulär</h1>
+            <nav class="nav">
+                <a href="index.html">Startsida</a>
+                <a href="form.html">Formulär</a>
+                <a href="login.html">Logga in</a>
+                <a href="register.html">Registrera</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="form-card">
+                <form>
+                    <div class="form-group">
+                        <label for="namn">Namn:</label>
+                        <input type="text" id="namn" name="namn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Favoritämne:</label>
+                        <select id="subject" name="subject">
+                            <option value="matematik">Matematik</option>
+                            <option value="svenska">Svenska</option>
+                            <option value="engelska">Engelska</option>
+                            <option value="programmering">Programmering</option>
+                            <option value="biologi">Biologi</option>
+                            <option value="historia">Historia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="checkbox-title">Hobbyer:</p>
+                        <label><input type="checkbox" name="hobby" value="fotboll"> Fotboll</label><br>
+                        <label><input type="checkbox" name="hobby" value="lasa"> Läsa böcker</label><br>
+                        <label><input type="checkbox" name="hobby" value="spel"> Datorspel</label><br>
+                        <label><input type="checkbox" name="hobby" value="musik"> Spela musik</label>
+                    </div>
+
+                    <div class="button-row">
+                        <input type="submit" value="Skicka" class="btn btn-primary">
+                        <input type="reset" value="Rensa" class="btn btn-secondary">
+                    </div>
+                </form>
+            </section>
+
+            <p class="link-row"><a href="index.html">Tillbaka till startsidan</a></p>
+        </main>
+    </div>
+</body>
+
+</html>
